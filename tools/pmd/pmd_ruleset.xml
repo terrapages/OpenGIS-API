@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="ppmd_ruleset">
+	<description> Ruleset used to check code for violations of style. </description>
+
+	<!-- Note: I have removed the braces.xml as i disagree with all of their rules, and
+               further modified some of the others by removing certain rules. It may also
+               be a good idea to modify some of the priorities and properties of some. mkopka - some time early 2005 -->
+
+    <!-- Here's some rules we'll specify one at a time -->
+    <rule ref="rulesets/basic.xml"/>
+    <rule ref="rulesets/clone.xml"/>
+    <rule ref="rulesets/codesize.xml"/>
+    <rule ref="rulesets/controversial.xml">
+    	<exclude name="OnlyOneReturn"/>
+    </rule>
+    <rule ref="rulesets/coupling.xml"/>
+    <rule ref="rulesets/design.xml">
+        <exclude name="ConfusingTernary"/>
+        <exclude name="SimpleDateFormatNeedsLocale"/>
+        <exclude name="UseLocaleWithCaseConversions"/>
+    </rule>
+    <rule ref="rulesets/finalizers.xml"/>
+    <rule ref="rulesets/imports.xml"/>
+    <rule ref="rulesets/javabeans.xml"/>
+    <rule ref="rulesets/junit.xml"/>
+    <rule ref="rulesets/logging-java.xml"/>
+    <rule ref="rulesets/naming.xml">
+        <exclude name="ShortVariable"/>
+    </rule>
+    <rule ref="rulesets/strictexception.xml"/>
+    <rule ref="rulesets/strings.xml"/>
+    <rule ref="rulesets/unusedcode.xml"/>
+
+    <!-- We want to customize this rule a bit, change the message and raise the priority -->
+    <rule ref="rulesets/basic.xml/EmptyCatchBlock" message="Must handle exceptions">
+        <priority>2</priority>
+    </rule>
+</ruleset>

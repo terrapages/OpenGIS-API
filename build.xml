@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<project name="TerraPages OpenGIS-API" default="dist">
+	<description>
+TerraPages Pty. Ltd. Java Interface to the OpenGIS schemas. 
+This is to read and write the OpenGIS interoperable xml but does not attempt to provide these services
+</description>
+
+	<!-- ################################################## -->
+	<!--         PROJECT-WIDE PROPERTY DECLARATIONS         -->
+	<!-- ################################################## -->
+	<property environment="env"/>
+	<!-- Set a deploy environment.. or just the the dev ones -->
+	<property file="build.${deployment.environment}.properties"/>
+	<property file="build.dev.properties"/>
+
+	<!-- 
+	A lot of the build process is based on the deployment.environment
+	property. The Dist-Tool runs the Ant tasks and provides you with this
+	information at startup. Since this is missing in the Sandbox, if the
+	property is NOT YET SET, then defauld the property value to 'dev'
+	
+	ahughes
+	-->
+	<condition property="deployment.environment" value="dev">
+		<not>
+			<isset property="deployment.environment"/>
+		</not>
+	</condition>
+
+	<path id="build.classpath">
+		<fileset dir="${project.lib.dir}" includes="**/*.jar" />
+		<fileset dir="${project.src.dir}/WEB-INF/lib" includes="*.jar" />
+		<fileset dir="${project.src.dir}/lib/" includes="**/*.jar" />
+		<fileset dir="${project.tools.dir}" includes="**/*.jar" />
+	</path>	
+	
+	<path id="tools.classpath">
+		<fileset dir="${project.tools.dir}" includes="**/*.jar" />
+		<fileset dir="${project.src.dir}/lib/" includes="**/*.jar" />
+	</path>		
+
+	<path id="junit.classpath">
+		<pathelement location="${jaxb.build.dir}"/>
+		<pathelement location="${project.build.dir}/${projectname}"/>
+		<pathelement location="${project.build.dir}/test"/>
+		<fileset dir="${project.lib.dir}" includes="**/*.jar" />
+		<fileset dir="${project.src.dir}/WEB-INF/lib" includes="*.jar" />
+		<fileset dir="${project.src.dir}/lib/jaxb-ri-20060426/" includes="*.jar" />
+		<fileset dir="${project.tools.dir}" includes="**/*.jar" />
+	</path>		
+	
+	<!--
+        TaskDefs listed here. In order to not have to place Junit.jar and JDepend.jar in the ant/lib directory
+		weve placed them locally in the project and taskdef-ed them The reason ive added local at the end of the
+		taskdef names, ie: junit-local is
+		a) as a reminder of this fact and that ant-junit.jar needs to be removed from ant/ib
+		b) to remove an override warning given by ant which gets scared cos it nows about junit but where overrinding it
+
+		Make sure you remove ant-junit.jar and ant-jdpend.jar from your ant/lib as we now have them local.
+	-->
+
+	<taskdef name="jdepend-local" classname="org.apache.tools.ant.taskdefs.optional.jdepend.JDependTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<taskdef name="junit-local" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<taskdef name="deploy" classname="org.apache.catalina.ant.DeployTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<filterset begintoken="@" endtoken="@" id="filters">
+		<!-- NOTE: last filters file seems to take precidence.... opposite to normal behaviour -->
+		<filtersfile file="build.dev.properties"/>
+		<filtersfile file="build.${deployment.environment}.properties"/>
+		<filter token="MODULE" value="${env.MODULE}"/>
+		<filter token="TAG" value="${env.TAG}"/>
+		<filter token="USER" value="${user.name}"/>
+		<!-- since this comes from the environment not a properties filter file -->
+		<filter token="deployment.environment" value="${deployment.environment}"/>
+	</filterset>
+
+	<!-- the help target simply echoes some simple help informataion to the user -->
+	<target name="help">
+		<echo message="The following are the main, top-level targets available."/>
+		<echo message="-------------------------------------------------------------------------------------------------------------"/>
+		<echo message="dist               The default target, compiles, packages and places deployment into dist directory.         "/>
+		<echo message="all                Runs every main target, running the 'dist' as well as all reports.                        "/>
+		<echo message="war.defaultproject Packages up the built code into a final war target and palces it in dist dir  .           "/>
+		<echo message="javadoc.html       Generate the set of javadocs. See doc/apidoc/html/index.html for root doc.                "/>
+		<echo message="javadoc.pdf        Generate the set of javadocsas PDF. See doc/apidoc/pdf/defaultproject.pdf for PDF doc.    "/>
+		<echo message="javadoc.deploy     Deploys the 'war-ed' up JavaDocs to a WebServer.                                          "/>
+		<echo message="junit              Compile and run the JUnit tests for this project. Packages reports into doc/reports/tests."/>
+		<echo message="pmd                Checks for code style violations against a set of rules. See doc/reports/pmd.             "/>
+		<echo message="cpd                Checks for instances of copy and paste that can be refactored into methods. See pmd dir.  "/>
+		<echo message="jdepend            Checks for cyclic dependencies and generates various code metrics.                        "/>
+		<echo message="-------------------------------------------------------------------------------------------------------------"/>
+		<echo message="use 'ant -projecthelp' for a list of all project targets.                                                    "/>
+		<echo message="use 'ant -help' for other options.                                                                           "/>
+		<echo message="-------------------------------------------------------------------------------------------------------------"/>
+	</target>
+
+	<!-- the 'clean' task cleans up to make a fresh build possible -->
+	<target name="clean" description="to remove all previously built .class and .jar files.">
+		<delete dir="${project.build.dir}" />
+		<delete dir="${project.prep.dir}"  />
+		<delete dir="${project.dist.dir}"  />
+	</target>
+
+	<!-- Prepare the environment by creating any required directories -->
+	<target name="prepare">
+		<mkdir dir="${project.build.dir}" />
+		<mkdir dir="${project.build.dir}/${projectname}" />
+		<mkdir dir="${jaxb.build.dir}"/>
+		<mkdir dir="${project.prep.dir}/" />
+		<mkdir dir="${project.dist.dir}/" />
+		<mkdir dir="${project.dist.dir}/apidoc/html"  />
+		<mkdir dir="${project.dist.dir}/apidoc/pdf"  />
+	</target>
+
+
+	<!-- Prepare the distro for release, and run all reports and targets. -->
+	<target name="all" depends="dist, pmd, cpd, jdepend" description="Prepares a distribution and runs all reports and all targets."/>
+
+	<!-- Prepare the distro for release, either as a jar, an executable jar or ear/war for deployment -->
+	<target name="dist" depends="war, opengis-api.jar, opengis-api.source.jar, examples, javadoc.html, javadoc.pdf, junit, prepare" description="Prepares a dist for release. Fails if unit tests fail.">
+		<!-- create a copy of the lib's for use with the distro -->
+		<copy todir="${project.dist.dir}">
+			<fileset dir="${project.src.dir}">
+				<include name="lib/**/*.jar"/>
+				<exclude name="**/CVS/*"/>
+				<exclude name="CVS"/>
+			</fileset>
+			<fileset dir="./">
+				<include name="changelog.txt"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- Generate the Java source using JAXB -->
+	<target name="jaxb.bind" depends="prepare">
+		<xjc target="${jaxb.build.dir}">
+			<binding  dir="src/xjb/ols/1.1.0/" includes="**/*.xjb"/>
+			<schema dir="src/xsd/ols/1.1.0/">
+				<include name="**/*.xsd"/>
+				<exclude name="**/debug.xsd"/>
+				<exclude name="Services.xsd"/>
+			</schema>
+			<arg value="-verbose" />
+			<!-- 
+     		<arg value="-nv" /> 
+     		-->
+		</xjc>
+
+
+
+	</target>
+
+	<!-- =====================================================================
+        	DefaultProject Class Compilation
+	     ===================================================================== -->
+	<target name="opengis-api.compile" depends="jaxb.bind" description="Compiles all java source for the project.">
+		<mkdir dir="${project.build.dir}/${projectname}" />
+		<javac destdir="${project.build.dir}/${projectname}" debug="on" >
+			<compilerarg value="-Xlint:unchecked" />
+			<compilerarg value="-Xlint:deprecation" />
+			<src path="./" />
+			<!-- unused at present -->
+			<!-- include name="src/java/com/**/*.java" / -->
+			<include name="src/java/com/**/*.java" />
+			<!-- include name="${jaxb.build.dir}/**/*.java" / -->
+			<include name="${jaxb.build.dir}/**/*.java" />
+			<!-- exclude name="src/java/com/**/examples/*.java" / -->
+			<exclude name="src/java/com/**/examples/*.java" />
+			<!-- classpath path="${build.classpath}" / -->
+			<classpath refid="build.classpath" />
+		</javac>
+	</target>
+
+	<!-- =====================================================================
+        	Packages up the jaxb class files into a 'jar'
+	     ===================================================================== -->
+	<target name="opengis-api.jar" depends="opengis-api.compile, junit" description="Builds code and package it up as a war.">
+		<mkdir dir="${project.dist.dir}" />
+
+		<copy file="${log4j.properties}" tofile="${project.build.dir}/${projectname}/log4j.properties"  overwrite="true" filtering="true">
+			<filterset refid="filters"/> 
+		</copy>
+
+		<jar destfile="${project.dist.dir}/${projectname}-${env.TAG}.jar">
+			<fileset dir="${project.build.dir}/${projectname}">
+				<include name="**/*.class"/>
+				<exclude name="**/examples/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="TerraPages"/>
+				<attribute name="Release" value="${env.TAG}"/>
+			</manifest>
+		</jar>
+		<!--
+		<war destfile="${project.dist.dir}/${projectname}.war" webxml="${project.src.dir}/WEB-INF/web.xml"  overwrite="true">
+			<fileset dir="${project.src.dir}/html">
+				<include name="**/*.html"/>
+				<include name="css/*.css"/>
+				<include name="javascript/*.js"/>
+				<include name="images/*.gif"/>
+				<include name="images/*.jpg"/>
+			</fileset>
+			<lib dir="${project.src.dir}/WEB-INF/lib">
+				<exclude name="dodgy_jar_not_needed_for_this_particular_war.jar"/>
+			</lib>
+			<classes dir="${project.build.dir}/${projectname}"/>
+		</war>
+		-->
+	</target>
+
+	<!-- =====================================================================
+        	Packages up the jaxb java source files into a 'jar'
+	     ===================================================================== -->
+	<target name="opengis-api.source.jar" depends="jaxb.bind" description="Builds the jaxb java files and packages them into a jar.">
+		<mkdir dir="${project.dist.dir}" />
+		
+		<copy file="${log4j.properties}" tofile="${project.build.dir}/${projectname}/log4j.properties"  overwrite="true" filtering="true">
+			<filterset refid="filters"/> 
+		</copy>
+
+		<jar destfile="${project.dist.dir}/${project.jar}-${env.TAG}.jar">
+			<fileset dir="${jaxb.build.dir}">
+				<include name="**/*.java" />
+			</fileset>
+			<fileset dir="${project.src.dir}">
+				<include name="java/**/*.java" />
+				<exclude name="java/com/**/examples/*.java" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="TerraPages" />
+				<attribute name="Release" value="${env.TAG}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="examples" depends="opengis-api.compile" description="Creates example usage of the API">
+		<mkdir dir="${project.dist.dir}/examples" />
+		<copy todir="${project.dist.dir}/examples">
+			<fileset dir="${project.src.dir}/java">
+				<include name="**/examples/*.java"/>
+				<exclude name="**/CVS/*"/>
+				<exclude name="CVS"/>
+			</fileset>
+			<fileset dir="${project.lib.dir}/httpClient">
+				<include name="*.jar"/>
+				<exclude name="**/CVS/*"/>
+				<exclude name="CVS"/>
+			</fileset>
+		</copy>
+	</target>
+
+
+	<!-- =====================================================================
+        	LISAcore API Doc Generation Targets
+		 ===================================================================== -->
+	<target name="javadoc.html" depends="opengis-api.compile" description="Generates API documentation in the typical HTML format.">
+		<mkdir dir="${project.dist.dir}/apidoc" />
+		<mkdir dir="${project.dist.dir}/apidoc/html" />
+
+		<javadoc destdir="${project.dist.dir}/apidoc/html" author="true" version="true" windowtitle="TerraPages OpenGIS-API ${env.TAG}" additionalparam="-breakiterator">
+			<fileset dir="" defaultexcludes="yes">
+				<include name="${project.src.dir}/java/com/**/*.java" />
+				<include name="${jaxb.build.dir}/**/*.java" />
+			</fileset>
+
+			<classpath refid="build.classpath" />
+			<doctitle>
+				<![CDATA[<h1>TerraPages OpenGIS-API</h1>]]>
+			</doctitle>
+		<bottom>
+			<![CDATA[<i>Copyright &#169; 2006 LISAsoft. All Rights Reserved.</i>]]>
+			</bottom>
+
+	<tag name="todo" scope="all" description="To do:" />
+</javadoc>
+</target>
+
+<target name="javadoc.pdf" depends="opengis-api.compile" description="Build the API documentation in PDF format.">
+	<mkdir dir="${project.dist.dir}/apidoc" />
+	<mkdir dir="${project.dist.dir}/apidoc/pdf" />
+	<javadoc doclet="com.tarsec.javadoc.pdfdoclet.PDFDoclet" docletpath="${project.lib.dir}/pdfdoclet-0.5.0_bundle.jar" author="true" version="true"
+				additionalparam="-pdf ${project.dist.dir}/apidoc/pdf/${projectname}-${env.TAG}.pdf -debug -config config/pdfdoclet.properties -workdir ${project.prep.dir}/java">
+		<fileset dir="" defaultexcludes="yes">
+			<include name="${project.src.dir}/java/com/**/*.java" />
+			<include name="${jaxb.build.dir}/**/*.java" />
+		</fileset>
+		<classpath refid="build.classpath" />
+	</javadoc>
+</target>
+
+<target name="javadoc.war" depends="javadoc.html" description="Takes the javadoc HTML directories and packages them up as a war.">
+	<mkdir dir="${project.dist.dir}" />
+	<war destfile="${project.dist.dir}/${projectname}-api.war" webxml="${project.src.dir}/WEB-INF/javadoc-web.xml">
+		<fileset dir="${project.dist.dir}/apidoc/html"/>
+	</war>
+</target>
+
+<target name="javadoc.deploy" depends="javadoc.war" description="Deploys the packaged javadoc application.">
+	<echo>
+		app server: ${tomcat.manager.url}
+		app path  : /${projectname}-api
+	</echo>
+	
+	<deploy url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${projectname}-api" war="file:${project.webapp.dir}/${projectname}-api.war" update="true" />
+
+</target>
+
+
+<!--javadoc -J-Xmx200m
+	-doclet com.sun.tools.doclets.doccheck.DocCheck
+	-docletpath doccheck.jar
+	-d jdkout2
+	-classlist
+	-docletID
+	-title "Java 2 Platform, v1.3"
+	-skipPkg 'org.omg.CosNaming.*'
+	-execDepth 2
+	-skipClass 'org.omg.*.*Helper:org.omg.*.*Holder'
+	-sourcepath ../../src/java com.lisasoft.defaultproject -->
+<!-- not implemented as a target yet - see scripts in tools/doccheck to run
+	<target name="javadoc.check" description=".">
+		<javadoc destdir="${project.dist.dir}/apidoc/" author="true" version="true" additionalparam="-breakiterator">
+			<fileset dir="${project.src.dir}/java" defaultexcludes="yes">
+				<include name="com/**/*.java" />
+			</fileset>
+			<doclet name="com.sun.tools.doclets.doccheck.DocCheck" path="${doccheck.lib.classpath}">
+				<param name="-docletID"/>
+				<param name="-classlist" value=""/>
+				<param name="-docletID" value=""/>
+				<param name="-title" value="Bla"/>
+				<param name="-skipPkg" value="org.omg.CosNaming.*"/>
+				<param name="-execDepth" value="2"/>
+				<param name="-skipClass" value="org.omg.*.*Helper:org.omg.*.*Holder"/>
+				<param name="-sourcepath" value="src/java com.lisasoft.defaultproject com.lisasoft.defaultproject.test com.lisasoft.defaultproject.test.test"/>
+			</doclet>
+
+			<classpath path="${build.classpath}" />
+		</javadoc>
+	</target>
+-->
+
+<!-- =====================================================================
+        	JUnit Compilation and Run Targets
+		 ===================================================================== -->
+<target name="junit" depends="junit.compile" description="Used to run the available junit tests and produce a report.">
+	<mkdir dir="${project.dist.dir}/reports/"/>
+	<mkdir dir="${project.dist.dir}/reports/tests"/>
+	
+	<copy file="${log4j.properties}" tofile="${project.build.dir}/${projectname}/log4j.properties"  overwrite="true" filtering="true">
+		<filterset refid="filters"/> 
+	</copy> 
+		
+	<!-- ADD showoutput="yes" to show system out --> 
+	<junit-local printsummary="yes" haltonfailure="yes" >
+		<classpath refid="junit.classpath"/>
+		<formatter type="plain"/>
+		<batchtest fork="yes" todir="${project.dist.dir}/reports/tests">
+			<fileset dir="${project.test.dir}">
+				<include name="**/*Test*.java"/>
+			</fileset>
+		</batchtest>
+	</junit-local>
+</target>
+
+<target name="junit.compile" depends="opengis-api.compile" description="Compiles the junit Test classes in this project.">
+	<mkdir dir="${project.build.dir}/test"/>
+	<javac destdir="${project.build.dir}/test" debug="on">
+		<src path="${project.test.dir}" />
+		<include name="**/*.java" />
+		<classpath refid="junit.classpath"/>
+	</javac>
+</target>
+
+<!-- =====================================================================
+        	Code Metrics and Reports Targets
+		 ===================================================================== -->
+<target name="pmd" depends="cpd" description="Used to generate a report in the ${project.dist.dir}/reports directory showing style violations.">
+	<mkdir dir="${project.dist.dir}/reports"/>
+	<mkdir dir="${project.dist.dir}/reports/pmd"/>
+
+	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+
+	<pmd rulesetfiles="${project.tools.dir}/pmd/pmd_ruleset.xml">
+		<formatter type="html" toFile="${project.dist.dir}/reports/pmd/pmd_report.html"/>
+		<fileset dir="${project.src.dir}">
+			<include name="**/*.java"/>
+		</fileset>
+	</pmd>
+</target>
+
+<!-- finds copied and pasted code duplications that can be refactored into methods -->
+<target name="cpd" description="Used to generate a report to find copy/paste duplicated code for refactoring into methods.">
+	<mkdir dir="${project.dist.dir}/reports"/>
+	<mkdir dir="${project.dist.dir}/reports/cpd"/>
+	
+	<taskdef name="cpd" classname="net.sourceforge.pmd.cpd.CPDTask">
+		<classpath refid="tools.classpath"/>
+	</taskdef>
+	
+	<cpd minimumTokenCount="60" outputFile="${project.dist.dir}/reports/cpd/cpd_report.txt">
+		<fileset dir="${project.src.dir}">
+			<include name="**/*.java"/>
+		</fileset>
+	</cpd>
+</target>
+
+<!-- This target is used to determine dependencys, code cycles, and stability metrics.-->
+<target name="jdepend" depends="opengis-api.compile" description="Used to generate a report to find package dependencies, stability metrics.">
+	<mkdir dir="${project.dist.dir}/reports"/>
+	<mkdir dir="${project.dist.dir}/reports/jdepend"/>
+	
+	<jdepend-local format="xml" outputfile="${project.dist.dir}/reports/jdepend/jdepend-report.xml">
+		<exclude name="java.*"/>
+		<exclude name="javax.*"/>
+		<exclude name="com.borland.*"/>
+		<exclude name="com.inprise.*"/>
+		<exclude name="net.sf.*"/>
+		<exclude name="org.apache.*"/>
+		<exclude name="org.displaytag.*"/>
+		<exclude name="org.omg.*"/>
+	
+		<classespath>
+			<pathelement location="${project.build.dir}/${projectname}/" />
+			<!-- this is the compiled class file location -->
+		</classespath>
+	
+		<!-- add this in to include bundled classes in a war file or compiled jar file
+	            <classespath>
+	            	<pathelement location="${compile.dir}/<some_jar_file>" />
+	            	<pathelement location="${compile.dir}/<some_war_file>" />
+	        	</classespath> -->		
+	</jdepend-local>
+	
+	<style basedir="${project.dist.dir}/reports/jdepend" destdir="${project.dist.dir}/reports/jdepend" includes="jdepend-report.xml" style="${jdepend.lib}/jdepend.xsl" />
+</target>
+
+
+<!-- =====================================================================
+        	WAR package
+	     ===================================================================== -->
+<target name="war" description="Builds code and package it up as a war.">
+	<mkdir dir="${project.build.dir}" />
+	<mkdir dir="${project.dist.dir}" />
+	<mkdir dir="${project.webapp.dir}"/>
+	<mkdir dir="${project.webapp.dir}/${deployment.environment}" />
+	
+	<copy todir="${project.build.dir}" filtering="true" overwrite="true">
+		<fileset dir="${project.src.dir}">
+			<include name="WEB-INF/web.xml"/>
+			<include name="META-INF/context.xml"/>
+		</fileset>
+		<filterset refid="filters"/>
+	</copy>
+
+	<war destfile="${project.webapp.dir}/${deployment.environment}/${project.war}" webxml="${project.build.dir}/WEB-INF/web.xml">
+		<metainf dir="${project.build.dir}/META-INF" includes="**/*"/>
+		<fileset dir="${project.src.dir}/html">
+			<include name="**/*"/>
+			<exclude name="**/CVS/*"/>
+		</fileset>
+		<fileset dir="${project.src.dir}">
+			<include name="xsd/**/*"/>
+			<exclude name="**/CVS/*"/>
+		</fileset>
+	</war>
+</target>
+
+<target name="jboss.deploy" depends="war" description="Builds the war and copies to jboss.deploy.dir for sandbox use">
+<copy
+	file="${project.dist.dir}/${deployment.environment}/${project.war}" 
+	tofile="${jboss.deploy.dir}/${project.war}" filtering="false" overwrite="true"/>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- Tomcat Deployment Operations                                        -->
+<!-- =================================================================== -->
+<target name="tomcat.deploy" description="Deploy to Tomcat" depends="war">
+	<echo message="Tomcat Manager : ${tomcat.manager.url}" />
+	<echo message="Tomcat Path : ${tomcat.path}" />
+	<echo message="Username/Password : ${tomcat.username}/${tomcat.password}" />
+	<deploy url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="${tomcat.path}" war="${project.webapp.dir}/${deployment.environment}/${project.war}"/>
+</target>
+
+<target name="tomcat.undeploy" description="Remove Tomcat Deploy">
+	<echo message="Tomcat Manager : ${tomcat.manager.url}" />
+	<echo message="Tomcat Path : ${tomcat.path}" />
+	<echo message="Username/Password : ${tomcat.username}/${tomcat.password}" />
+	<undeploy url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="${tomcat.path}" />
+</target>
+
+<target name="tomcat.redeploy" depends="tomcat.undeploy, tomcat.deploy" description="Redeploy to Tomcat"/>
+</project>
+

@@ -1,0 +1,1 @@
+Place holder to demonstrate packaging up a WAR.

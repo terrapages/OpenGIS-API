@@ -1,0 +1,48 @@
+<XLS version="1.1" xmlns:gml="http://www.opengis.net/gml"
+	xmlns="http://www.opengis.net/xls"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opengis.net/xls C:\work\Openls\schema\schema(1.1)\LocationUtilityService.xsd">
+
+	<ResponseHeader />
+
+	<Response version="1.1" requestID="">
+
+		<GeocodeResponse>
+
+			<GeocodeResponseList numberOfGeocodedAddresses="1">
+
+				<GeocodedAddress>
+
+					<gml:Point>
+
+						<gml:pos>-71.459183 41.831837</gml:pos>
+
+					</gml:Point>
+
+					<Address countryCode="US">
+
+						<StreetAddress>
+
+							<Street>Freedom Rd</Street>
+
+						</StreetAddress>
+
+						<Place type="Municipality">Providence</Place>
+
+						<Place type="CountrySubdivision">RI</Place>
+
+						<PostalCode>02909</PostalCode>
+
+					</Address>
+
+					<GeocodeMatchCode accuracy="0.0" />
+
+				</GeocodedAddress>
+
+			</GeocodeResponseList>
+
+		</GeocodeResponse>
+
+	</Response>
+
+</XLS>

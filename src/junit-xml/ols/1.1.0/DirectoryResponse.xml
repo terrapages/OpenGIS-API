@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xls:XLS xmlns:xls="http://www.opengis.net/xls" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1">
+    <xls:ResponseHeader sessionID="65D4CA2996293EEA6C9444AA4B24E34A"/>
+    <xls:Response version="1.1" requestID="sample" numberOfResponses="75">
+        <xls:DirectoryResponse>
+            <xls:POIContext>
+                <xls:POI POIName="Agincourt Hotel" ID="344595">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.867654 151.20706</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>871 George St  , Ultimo 2007, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="134"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="The Grand Hotel" ID="348295">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.865526 151.208254</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>30 Hunter St (Cnr Pitt St)  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="220"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Hotel Chambers" ID="342702">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.86789 151.21102</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Lower ground floor 53 Martin Pl (Cnr Elizabeth St) , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="237"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="St Patrick's Tavern" ID="343968">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.8686 151.20586</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>66 King St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="273"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="O'Donoghue's Irish Pub" ID="350644">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.866957 151.20493</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>117 Clarence St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="335"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Forbes Restaurant" ID="346371">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.870218 151.20621</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>The Forbes Hotel Level 2 30 York St (Cnr King St), Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="368"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Metropolitan Hotel" ID="344556">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.863759 151.20758</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>244 George St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="423"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Slip Inn" ID="352975">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.868484 151.20344</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>111 Sussex St (Cnr King St)  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="480"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Paddy Maguires" ID="354696">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.870954 151.20485</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Kent St (Cnr Erskine St)  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="510"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Shelbourne Hotel" ID="347275">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.871301 151.20403</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>200 Sussex St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="590"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Bristol Arms Retro Tavern" ID="350701">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.869213 151.202239</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>81 Sussex St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="609"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Hotel Coronation" ID="346925">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873182 151.20787</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>5 - 7 Park St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="632"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Ship Inn" ID="349902">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.861672 151.209408</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Alfred St (Cnr Pitt St)  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="651"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Paragon Hotel" ID="346811">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.861759 151.210435</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Loftus St (Cnr Alfred St)  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="661"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Pavilion Hotel" ID="345636">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.8741 151.20697</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>580 George St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="745"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Fortune of War Hotel" ID="348629">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.860511 151.208445</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>137 George St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="775"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Australian Heritage Hotel" ID="352283">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.859661 151.20696</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>100 Cumberland St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="881"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="The Orient Hotel" ID="347440">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.859054 151.20873</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>89 George St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="937"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="East Sydney Hotel" ID="349729">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.872943 151.2166</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Crown St (Cnr Cathedral St)  , Woolloomooloo 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="962"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Docks Hotel" ID="345714">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.870445 151.198453</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Harbourside Shop 225 Darling Dr, Darling Harbour 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="985"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Three Wise Monkeys Pub" ID="350741">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.876216 151.2061</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>555 George St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="991"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Bells Hotel" ID="345200">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.868904 151.219198</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>1 Bourke St  , Woolloomooloo 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1001"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Shark Hotel" ID="343994">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.876523 151.20702</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>127 Liverpool St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1010"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Woolloomooloo Bay Hotel" ID="352212">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.868946 151.219433</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>2 Bourke St  , Woolloomooloo 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1024"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Glenmore Hotel" ID="343730">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.858156 151.207647</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>96 Cumberland St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1039"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Avillion Hotel" ID="345317">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.877004 151.2076</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>389 Pitt St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1057"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Captain Cook Hotel" ID="342652">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.858876 151.203436</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>33 Kent St  , Millers Point 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1065"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Mercantile Hotel" ID="343936">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.857588 151.20863</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>25 George St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1099"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Lord Roberts Hotel" ID="345760">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.875682 151.21523</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>64 Stanley St  , East Sydney 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1100"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Harbour View Hotel" ID="351037">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.857173 151.206767</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>18 Lower Fort St  , The Rocks 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1156"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Port Orient Restaurant &amp; Bar" ID="348874">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873636 151.19833</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Harbourside Complex Shop 449 Darling Dr, Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1161"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Scruffy Murphys Hotel" ID="344503">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.877933 151.20591</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>43-49 Goulburn St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1181"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Civic Hotel" ID="353361">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.878275 151.20749</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>388 Pitt St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1198"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Civic Hotel Dining Room" ID="345897">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.878275 151.20749</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>388 Pitt St  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1198"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Civic Hotel Saloon" ID="342395">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.878275 151.20749</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Ground floor 388 Pitt St , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1198"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Tilbury Hotel" ID="354448">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.87342 151.21947</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>12-18 Nicholson St (Cnr Forbes St)  , Woolloomooloo 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1208"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Spectrum" ID="343205">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.877768 151.213567</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>34 Oxford St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1231"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Paddy McGuire's, Star City" ID="345077">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.871008 151.19571</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>80 Pyrmont St  , Pyrmont 2009, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1245"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="The Old Fitzroy Hotel" ID="343181">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873094 151.22066</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>129 Dowling St  , Woolloomooloo 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1284"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Kirk on Harris Hotel" ID="355576">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.871996 151.19511</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>205 Harris St  , Pyrmont 2009, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1335"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Hotel Hollywood" ID="344311">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.879574 151.210537</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>2 Foster St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1352"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="888 Hotel" ID="351379">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.879758 151.209099</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>198 Elizabeth St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1360"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Brighton Hotel" ID="352448">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.878779 151.214353</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>77 Oxford St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1363"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Paddy Maguires" ID="353702">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.879536 151.205501</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>George St (Cnr Hay St)  , Haymarket 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1363"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Macquarie Hotel" ID="347566">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.88 151.209987</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>42 Wentworth Ave  , Sydney 2000, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1393"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="O'Malley's Hotel" ID="352430">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.875016 151.22128</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>228 William St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1446"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="The Point Hotel" ID="354935">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.867539 151.192533</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>59 Harris St  , Pyrmont 2009, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1477"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Kings Cross Hotel" ID="342377">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.875454 151.22147</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>248 William St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1489"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Lord Wolseley" ID="354819">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.876714 151.196696</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>265 Bulwara Rd  , Ultimo 2007, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1495"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Gaslight Inn" ID="346231">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.879852 151.2152</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>278 Crown St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1503"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Crest Hotel, Kings Cross" ID="352862">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.874255 151.22291</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>111 Darlinghurst Rd  , Kings Cross 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1529"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Goldfish Bowl, Crest Hotel" ID="351618">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.874256 151.222913</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>111 Darlinghurst Rd  , Kings Cross 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1529"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Porterhouse Hotel" ID="346379">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.880807 151.21354</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>233 Riley St (Cnr Campbell St)  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1547"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Empire Hotel" ID="355246">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873663 151.22463</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>2a Roslyn St  , Potts Point 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1641"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Empire Hotel, Top Level" ID="349406">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873663 151.22463</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>2a Roslyn St  , Potts Point 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1641"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Courthouse Hotel" ID="346969">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.880628 151.21693</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>189 Oxford St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1651"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Spud and Douglas" ID="349852">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.873835 151.224888</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>4 Roslyn St  , Kings Cross 2011, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1671"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Kinselas Hotel" ID="352890">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.881216 151.21653</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>383 Bourke St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1692"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Taylor Square Hotel" ID="354855">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.881469 151.21699</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>1 Flinders St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1737"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Tailors on Central" ID="343676">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.883197 151.20945</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>84 Mary St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1743"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="KB Hotel" ID="349434">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884233 151.21053</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>26 Foveaux St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1865"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Excelsior Hotel, Surry Hills" ID="353620">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884477 151.21115</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>64 Foveaux St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1898"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Flinders Restaurant" ID="343135">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.883244 151.217331</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>63-65 Flinders St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1927"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Bat &amp; Ball Hotel" ID="350424">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.882713 151.21875</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>South Dowling St (Cnr Cleveland St)  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1935"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Clare Hotel" ID="342299">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884241 151.20166</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>20 Broadway  , Ultimo 2007, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="1961"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Beresford Hotel" ID="348516">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884728 151.215147</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>354 Bourke St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2007"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Australian Youth Hotel" ID="343644">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.881755 151.19464</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>63 Bay St  , Glebe 2037, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2035"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Off Broadway Hotel" ID="353014">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.881998 151.19479</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Broadway Shopping Centre Shop LG1  Lower ground floor 1 Bay St, Glebe 2037, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2048"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Hopetoun Hotel" ID="353454">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.885324 151.21582</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>416 Bourke St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2089"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Abercrombie Hotel" ID="350474">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884468 151.198429</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Abercrombie St (Cnr Broadway)  , Chippendale 2008, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2099"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Palace Hotel" ID="352886">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884738 151.21811</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>122 Flinders St  , Darlinghurst 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2108"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Friend in Hand Hotel" ID="350189">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.88123 151.192527</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>58 Cowper St  , Glebe 2037, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2121"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Shakespeare Hotel" ID="347297">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.887613 151.21111</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>200 Devonshire St  , Surry Hills 2010, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2243"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Craic" ID="349119">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.884352 151.19501</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>Shop 17  , Sorrento 6020, WA</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2247"/>
+            </xls:POIContext>
+            <xls:POIContext>
+                <xls:POI POIName="Gladstone Hotel" ID="346205">
+                    <xls:POIAttributeList>
+                        <xls:ReferenceSystem>
+                            <xls:SIC type="PUB" subType="NATIVE AUSTRALIAN" code="3641"/>
+                        </xls:ReferenceSystem>
+                        <xls:POIInfoList>
+                            <xls:POIInfo value="http://localhost:5580/directory/images/legend/hww/pub.gif" name="urlIconGeneric"/>
+                        </xls:POIInfoList>
+                    </xls:POIAttributeList>
+                    <gml:Point>
+                        <gml:pos>-33.887851 151.2014</gml:pos>
+                    </gml:Point>
+                    <xls:Address countryCode="61">
+                        <xls:freeFormAddress>115 Regent St  , Chippendale 2008, NSW</xls:freeFormAddress>
+                    </xls:Address>
+                </xls:POI>
+                <xls:Distance value="2350"/>
+            </xls:POIContext>
+        </xls:DirectoryResponse>
+    </xls:Response>
+</xls:XLS>

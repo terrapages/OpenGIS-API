@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xls:XLS xmlns:xls="http://www.opengis.net/xls" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1">
+    <xls:ResponseHeader sessionID="65D4CA2996293EEA6C9444AA4B24E34A"/>
+    <xls:Response version="1.1" requestID="sample" numberOfResponses="1">
+        <xls:ReverseGeocodeResponse>
+            <xls:ReverseGeocodedLocation>
+                <gml:Point srsName="EPSG:4238">
+                    <gml:pos>-34.94226099 138.58988501</gml:pos>
+                </gml:Point>
+                <xls:Address countryCode="AU">
+                    <xls:StreetAddress>
+                        <xls:Building subdivision="" number="38"/>
+                        <xls:Street typeSuffix="ROAD" officialName="GREENHILL"/>
+                    </xls:StreetAddress>
+                    <xls:Place type="MunicipalitySubdivision">WAYVILLE</xls:Place>
+                    <xls:Place type="CountrySubdivision">SA</xls:Place>
+                    <xls:PostalCode>5034</xls:PostalCode>
+                </xls:Address>
+            </xls:ReverseGeocodedLocation>
+        </xls:ReverseGeocodeResponse>
+    </xls:Response>
+</xls:XLS>

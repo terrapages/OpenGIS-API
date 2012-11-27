@@ -1,0 +1,74 @@
+#!/bin/csh
+
+set MODULE=$1
+set TAG=$2
+set DEPLOY_DIR=$3
+echo 1:'$MODULE' 2:'$TAG' 3:'$DEPLOY_DIR'
+
+if ( "$DEPLOY_DIR" == "" ) then
+ echo "$0 :  Deploy dir must be set, exiting"
+ exit 0
+endif
+
+echo "---------------------------------------"
+echo "About to Build the Binary Distrubution:"
+echo "---------------------------------------"
+echo "Current Working Diretory:"
+pwd
+echo "Using Ant:"
+ant -version
+echo "Using Java:"
+java -version
+
+CHECKJAVA:
+echo "---------------------------------------"
+echo "              ATTENTION                "
+echo "---------------------------------------"
+echo "If the above Ant and Java Settings are "
+echo "not correct you must fix them in your  "
+echo "User Environment Settings."
+echo ""
+echo -n "Are the above settings correct? (y/n)"
+set Answer=$<
+switch ($Answer)
+    case y:
+        echo "Excellent: we will continue with the build."
+        goto BUILD
+    default:
+        echo "Thanks for using the intaller, fix the above issues and run the deploy again."
+        goto ENDDEPLOYRC
+endsw
+
+BUILD:
+echo "The current working directory is '`pwd`' press any key to continue."
+echo "Building Release $TAG NOW!"
+setenv MODULE "$MODULE"
+setenv TAG "$TAG"
+ant dist
+
+CHECKBUILD:
+echo "---------------------------------------"
+echo "              ATTENTION                "
+echo "---------------------------------------"
+echo "Its important that the build above"
+echo "was successful. If the build above is"
+echo "NOT successful, you should cancel the"
+echo "deploy and Fix the project."
+echo ""
+echo -n "Was the build SUCCESSFUL? (y/n)"
+set Answer=$<
+switch ($Answer)
+    case y:
+        echo "EXCELLENT: continuing to pack the shar with the built binaries"
+        goto DONE
+    default:
+        echo "Thanks for using the intaller, fix the project build issues and run the deploy again."
+        goto ENDDEPLOYRC
+endsw
+
+DONE:
+echo "Moving `pwd`/rel/* -> $DEPLOY_DIR"
+mv dist/* $DEPLOY_DIR
+
+ENDDEPLOYRC:
+

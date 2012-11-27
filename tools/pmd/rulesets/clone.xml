@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<ruleset name="Clone Implementation Rules" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../etc/ruleset_xml_schema.xml">
+  <description>
+The Clone Implementation ruleset contains a collection of rules that find questionable usages of the clone() method.
+  </description>
+
+    <rule name="ProperCloneImplementationRule"
+         message="Object clone() should be implemented with super.clone()"
+         class="net.sourceforge.pmd.rules.XPathRule">
+     <description>
+     Object clone() should be implemented with super.clone()
+     </description>
+     <properties>
+         <property name="xpath">
+             <value>
+                 <![CDATA[
+//ClassDeclaration//MethodDeclarator
+[@Image = 'clone']
+[count(FormalParameters/*) = 0]
+[count(../Block//*[
+    (self::AllocationExpression) and
+    (./Name/@Image = ancestor::
+UnmodifiedClassDeclaration[position()=last()]/@Image)
+  ])> 0
+]
+                ]]>
+             </value>
+         </property>
+     </properties>
+        <priority>2</priority>
+
+     <example>
+ <![CDATA[
+class Foo{
+    public Object clone(){
+        return new Foo(); // This is bad
+    }
+}
+]]>
+     </example>
+     </rule>
+
+    <rule name="CloneThrowsCloneNotSupportedException"
+         message="clone() method should throw CloneNotSupportedException"
+         class="net.sourceforge.pmd.rules.XPathRule">
+         <description>
+        The method clone() should throw a CloneNotSupportedException
+         </description>
+         <properties>
+             <property name="xpath">
+                 <value>
+                     <![CDATA[
+//ClassDeclaration
+[@Final = 'false']
+[.//MethodDeclaration[
+MethodDeclarator/@Image = 'clone'
+and count(MethodDeclarator/FormalParameters/*) = 0
+and count(NameList/Name[contains
+(@Image,'CloneNotSupportedException')]) = 0]]
+                     ]]>
+                 </value>
+             </property>
+         </properties>
+         <priority>3</priority>
+         <example>
+             <![CDATA[
+ public class MyClass implements Cloneable{
+     public Object clone() // will cause an error {
+          MyClass clone = (MyClass)super.clone();
+          ...
+          return clone;
+     }
+ }
+    ]]>
+         </example>
+     </rule>
+
+    <rule name="CloneMethodMustImplementCloneable"
+        message="clone() method should be implemented only if implementing Cloneable interface"
+        class="net.sourceforge.pmd.rules.XPathRule">
+        <description>
+       The method clone() should only be implemented if the class implements Cloneable interface
+        </description>
+        <properties>
+            <property name="xpath">
+                <value>
+                    <![CDATA[
+//ClassDeclaration
+[not(./UnmodifiedClassDeclaration/NameList/Name
+[contains(@Image, 'Cloneable')])]
+[.//MethodDeclaration/MethodDeclarator[@Image
+= 'clone' and count(FormatParameters/*) = 0]]
+                    ]]>
+                </value>
+            </property>
+        </properties>
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+public class MyClass  {
+   // will cause an error
+   public Object clone() throws CloneNotSupportedException {
+    ...
+   }
+}
+   ]]>
+        </example>
+    </rule>
+
+</ruleset>
+

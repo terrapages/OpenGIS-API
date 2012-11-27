@@ -1,0 +1,1 @@
+This directory should contain all config properties for the various tools, like log4j, pdf doclet, etc.

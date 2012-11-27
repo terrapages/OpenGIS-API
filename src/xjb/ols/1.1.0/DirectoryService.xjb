@@ -1,0 +1,46 @@
+<jxb:bindings version="1.0"
+               xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:bindings schemaLocation="../../../xsd/ols/1.1.0/DirectoryService.xsd" node="/xs:schema">
+		<!--  _POIProperty -->
+		<jxb:bindings node="//xs:element[@name='_POIProperty']">
+			<jxb:class name="POIPropertyImpl"/>
+		</jxb:bindings>
+	</jxb:bindings> 
+</jxb:bindings>
+
+<!--
+<jxb:bindings version="1.0" 
+  xmlns:jxb="http://java.sun.com/xml/ns/jaxb" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
+  jxb:extensionBindingPrefixes="xjc">
+    <jxb:bindings schemaLocation="po4.xsd" node="/xs:schema">
+        <jxb:globalBindings>
+            <xjc:superClass name="com.syh.Shape"/>
+            <xjc:serializable uid="12343"/>
+        </jxb:globalBindings>
+        <jxb:bindings node="//xs:element[@name='Widgets']//xs:complexType//xs:choice">
+            <jxb:property name="Shapes"/>
+        </jxb:bindings>
+    </jxb:bindings>
+</jxb:bindings>
+-->
+
+
+<!--
+<jxb:bindings version="1.0"
+  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <jxb:bindings schemaLocation="qstat.xsd" node="/xs:schema">
+      <jxb:bindings node="//xs:complexType[@name='job_list_t']">
+         <jxb:bindings node="//xs:attribute[@name='state']">
+            <jxb:property name="stateAttribute"/>
+         </jxb:bindings>
+      </jxb:bindings>
+      <jxb:schemaBindings>
+         <jxb:package name="com.sun.grid.xml.qstat"/>
+      </jxb:schemaBindings>
+   </jxb:bindings>
+</jxb:bindings>
+ -->

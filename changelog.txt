@@ -1,0 +1,10 @@
+v2_1_0, ahughes 2006-09-07
+----------------------------------------------
+* Added https (https) client examples only
+* Upgraded minor version to indicate that there
+  are no known bugs with v2_0_0 (otherwise we
+  would have v2_0_1).
+
+v2_0_0, ahughes
+----------------------------------------------
+*Upgraded from JAXBv1 to JAXBv2.
